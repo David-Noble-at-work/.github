@@ -1,0 +1,12 @@
+name: Triage
+on:
+  issues:
+    types: [opened, transferred]
+jobs:
+  add-to-triage:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/add-to-project@v2.0.0
+        with:
+          project-url: ${{ vars.TRIAGE_PROJECT_URL }}
+          github-token: ${{ secrets.ADD_TO_PROJECT_PAT }}
