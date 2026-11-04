@@ -5,6 +5,11 @@ on:
 jobs:
   add-to-triage:
     runs-on: ubuntu-latest
+    timeout-minutes: 5
+    # The workflow's own token adds the area label and nothing else. The classic token in ADD_TO_PROJECT_PAT adds the
+    # issue to the account's Triage project, which no other token can write to.
+    permissions:
+      issues: write
     steps:
       - uses: actions/add-to-project@v2.0.0
         with:
@@ -12,11 +17,11 @@ jobs:
           github-token: ${{ secrets.ADD_TO_PROJECT_PAT }}
       - name: Copy the form's Area into its label
         env:
-          GH_TOKEN: ${{ secrets.ADD_TO_PROJECT_PAT }}
+          GH_TOKEN: ${{ github.token }}
           BODY: ${{ github.event.issue.body }}
           NUMBER: ${{ github.event.issue.number }}
         run: |
-          area=$(printf '%s\n' "$BODY" | awk '/^### Area[[:space:]]*$/ { getline; while ($0 ~ /^[[:space:]]*$/) getline; print; exit }')
+          area=$(printf '%s\n' "$BODY" | tr -d '\r' | awk '/^### Area[[:space:]]*$/ { while ((getline line) > 0) if (line !~ /^[[:space:]]*$/) { print line; exit }; exit }')
           case "$area" in
             Product | Engineering) ;;
             *) echo "No Area in the form: the Triage project's Missing Area view will show it."; exit 0 ;;
