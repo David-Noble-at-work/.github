@@ -10,3 +10,16 @@ jobs:
         with:
           project-url: ${{ vars.TRIAGE_PROJECT_URL }}
           github-token: ${{ secrets.ADD_TO_PROJECT_PAT }}
+      - name: Copy the form's Area into its label
+        env:
+          GH_TOKEN: ${{ secrets.ADD_TO_PROJECT_PAT }}
+          BODY: ${{ github.event.issue.body }}
+          NUMBER: ${{ github.event.issue.number }}
+        run: |
+          area=$(printf '%s\n' "$BODY" | awk '/^### Area[[:space:]]*$/ { getline; while ($0 ~ /^[[:space:]]*$/) getline; print; exit }')
+          case "$area" in
+            Product | Engineering) ;;
+            *) echo "No Area in the form: the Triage project's Missing Area view will show it."; exit 0 ;;
+          esac
+          gh issue edit "$NUMBER" --repo "$GITHUB_REPOSITORY" --add-label "area:$(printf '%s' "$area" | tr '[:upper:]' '[:lower:]')"
+          echo "Area: $area"
