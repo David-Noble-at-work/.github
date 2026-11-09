@@ -6,8 +6,8 @@ jobs:
   add-to-triage:
     runs-on: ubuntu-latest
     timeout-minutes: 5
-    # The workflow's own token adds the area label and nothing else. The classic token in ADD_TO_PROJECT_PAT adds the
-    # issue to the account's Triage project, which no other token can write to.
+    # The workflow's own token adds the area and severity labels and nothing else. The classic token in
+    # ADD_TO_PROJECT_PAT adds the issue to the account's Triage project, which no other token can write to.
     permissions:
       issues: write
     steps:
@@ -28,3 +28,18 @@ jobs:
           esac
           gh issue edit "$NUMBER" --repo "$GITHUB_REPOSITORY" --add-label "area:$(printf '%s' "$area" | tr '[:upper:]' '[:lower:]')"
           echo "Area: $area"
+      # Ruled 2026-11-04 (David-Noble-at-work/personal#311): a bug filed from the bug form, which sets the bug label,
+      # starts at severity:medium; any other issue is severity:n/a. An issue that already has a severity keeps it.
+      - name: Set the Severity a new issue starts with
+        env:
+          GH_TOKEN: ${{ github.token }}
+          LABELS: ${{ join(github.event.issue.labels.*.name, ',') }}
+          NUMBER: ${{ github.event.issue.number }}
+        run: |
+          case ",$LABELS," in
+            *,severity:*) echo "The issue has a severity already: $LABELS"; exit 0 ;;
+            *,bug,*) severity=medium ;;
+            *) severity=n/a ;;
+          esac
+          gh issue edit "$NUMBER" --repo "$GITHUB_REPOSITORY" --add-label "severity:$severity"
+          echo "Severity: $severity"
