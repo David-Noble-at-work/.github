@@ -71,10 +71,6 @@ labels:
         description: 'Priority: urgent'
         id: LA_kwDOVhE47c8AAAADA_-s-g
         name: priority:urgent
-      - color: ededed
-        description: 'A label for the proof of #437, removed when it ends'
-        id: LA_kwDOVhE47c8AAAADCZOimQ
-        name: proof:437-renamed
       - color: d876e3
         description: Further information is requested
         id: LA_kwDOVhE47c8AAAADAz2Q8w
