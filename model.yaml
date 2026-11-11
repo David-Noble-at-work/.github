@@ -5,172 +5,228 @@ labels:
     David-Noble-at-work/.github:
       - color: f143ab
         description: Barrier affecting people with disabilities
+        id: LA_kwDOVhE47c8AAAADAz2QWQ
         name: accessibility
       - color: 0e8a16
         description: Design artifacts, technical specs, internal infrastructure, testing, and executing development plans
+        id: LA_kwDOVhE47c8AAAADA_CkFw
         name: area:engineering
       - color: 1d76db
         description: User-facing features, capabilities, or functional components released from this repository
+        id: LA_kwDOVhE47c8AAAADA_Cj0w
         name: area:product
       - color: d73a4a
         description: 'Level 2: unplanned work, a defect found rather than planned; repairs a feature'
+        id: LA_kwDOVhE47c8AAAADAz2QRw
         name: bug
       - color: 0075ca
         description: Improvements or additions to documentation
+        id: LA_kwDOVhE47c8AAAADAz2QZw
         name: documentation
       - color: b60205
         description: 'Effort: high'
+        id: LA_kwDOVhE47c8AAAADA_-uww
         name: effort:high
       - color: 0e8a16
         description: 'Effort: low'
+        id: LA_kwDOVhE47c8AAAADA_-vWA
         name: effort:low
       - color: fbca04
         description: 'Effort: medium'
+        id: LA_kwDOVhE47c8AAAADA_-vEA
         name: effort:medium
       - color: a2eeef
         description: New feature or request
+        id: LA_kwDOVhE47c8AAAADAz2Qkg
         name: enhancement
       - color: 7057ff
         description: 'Level 0: a body of work with an owner, the root work issues roll up to; decomposes into features'
+        id: LA_kwDOVhE47c8AAAADA0OT-Q
         name: epic
       - color: 0e8a16
         description: 'Level 1: a capability for the product or for engineering; decomposes into tasks and bugs'
+        id: LA_kwDOVhE47c8AAAADA0OU4w
         name: feature
       - color: 7057ff
         description: Good for newcomers
+        id: LA_kwDOVhE47c8AAAADAz2Qvw
         name: good first issue
       - color: "008672"
         description: Extra attention is needed
+        id: LA_kwDOVhE47c8AAAADAz2Qqg
         name: help wanted
       - color: b60205
         description: 'Priority: high'
+        id: LA_kwDOVhE47c8AAAADA_-tTQ
         name: priority:high
       - color: 0e8a16
         description: 'Priority: low'
+        id: LA_kwDOVhE47c8AAAADA_-t0A
         name: priority:low
       - color: fbca04
         description: 'Priority: medium'
+        id: LA_kwDOVhE47c8AAAADA_-tlQ
         name: priority:medium
       - color: e99695
         description: 'Priority: urgent'
+        id: LA_kwDOVhE47c8AAAADA_-s-g
         name: priority:urgent
       - color: d876e3
         description: Further information is requested
+        id: LA_kwDOVhE47c8AAAADAz2Q8w
         name: question
       - color: cfd3d7
         description: 'Closed: the work was declined'
+        id: LA_kwDOVhE47c8AAAADA6gLWA
         name: resolution:declined
       - color: cfd3d7
         description: 'Closed: another issue covers it'
+        id: LA_kwDOVhE47c8AAAADAz2Qfw
         name: resolution:duplicate
       - color: e4e669
         description: 'Closed: not a real problem, or filed in the wrong place'
+        id: LA_kwDOVhE47c8AAAADAz2Q2A
         name: resolution:invalid
       - color: 8a63d2
         description: 'Collection: describes a scenario, the story its features tell'
+        id: LA_kwDOVhE47c8AAAADA0NPiA
         name: scenario
       - color: 1d76db
         description: 'Collection: describes a schedule, its deliverable and its exit criteria'
+        id: LA_kwDOVhE47c8AAAADA0NPOg
         name: schedule
       - color: b60205
         description: 'Severity: data loss, corruption, or a security failure'
+        id: LA_kwDOVhE47c8AAAADA_-t_Q
         name: severity:critical
       - color: d93f0b
         description: 'Severity: a supported path is broken with no workaround'
+        id: LA_kwDOVhE47c8AAAADA_-uKg
         name: severity:high
       - color: 0e8a16
         description: 'Severity: cosmetic, or a defect nobody is hitting'
+        id: LA_kwDOVhE47c8AAAADA_-uig
         name: severity:low
       - color: fbca04
         description: 'Severity: broken with a workaround, or a narrow path'
+        id: LA_kwDOVhE47c8AAAADA_-uUQ
         name: severity:medium
       - color: cfd3d7
         description: 'Severity: not applicable, the issue is not a bug'
+        id: LA_kwDOVhE47c8AAAADBSYTPw
         name: severity:n/a
       - color: 1d76db
         description: 'Level 2: planned work, a step in delivering a feature'
+        id: LA_kwDOVhE47c8AAAADA0OVsA
         name: task
     David-Noble-at-work/personal:
       - color: 0e8a16
         description: Design artifacts, technical specs, internal infrastructure, testing, and executing development plans
+        id: LA_kwDOAuWpQc8AAAADA_CjdA
         name: area:engineering
       - color: 1d76db
         description: User-facing features, capabilities, or functional components released from this repository
+        id: LA_kwDOAuWpQc8AAAADA_CjTQ
         name: area:product
       - color: d73a4a
         description: 'Level 2: unplanned work, a defect found rather than planned; repairs a feature'
+        id: MDU6TGFiZWwzMDM5MDkwNTY=
         name: bug
       - color: 0366d6
         description: Pull requests that update a dependency file
+        id: LA_kwDOAuWpQc7i0wgf
         name: dependencies
       - color: 0075ca
         description: Documentation only; branches as doc/
+        id: LA_kwDOAuWpQc8AAAACzSgIbg
         name: documentation
       - color: b60205
         description: 'Effort: high'
+        id: LA_kwDOAuWpQc8AAAADA_-rlw
         name: effort:high
       - color: 0e8a16
         description: 'Effort: low'
+        id: LA_kwDOAuWpQc8AAAADA_-sZg
         name: effort:low
       - color: fbca04
         description: 'Effort: medium'
+        id: LA_kwDOAuWpQc8AAAADA_-sBw
         name: effort:medium
       - color: 84b6eb
         description: Improvement to existing behavior; branches as feature/
+        id: MDU6TGFiZWwzMDM5MDkwNTg=
         name: enhancement
       - color: 7057ff
         description: 'Level 0: a body of work with an owner, the root work issues roll up to; decomposes into features'
+        id: LA_kwDOAuWpQc8AAAACzShMWQ
         name: epic
       - color: 0e8a16
         description: 'Level 1: a capability for the product or for engineering; decomposes into tasks and bugs'
+        id: LA_kwDOAuWpQc8AAAACzShMDA
         name: feature
       - color: 7057ff
         description: Good for newcomers
+        id: LA_kwDOAuWpQc8AAAADBSYT1w
         name: good first issue
       - color: b60205
         description: 'Priority: high'
+        id: LA_kwDOAuWpQc8AAAADA_-pXw
         name: priority:high
       - color: 0e8a16
         description: 'Priority: low'
+        id: LA_kwDOAuWpQc8AAAADA_-qDA
         name: priority:low
       - color: fbca04
         description: 'Priority: medium'
+        id: LA_kwDOAuWpQc8AAAADA_-ptw
         name: priority:medium
       - color: e99695
         description: 'Priority: urgent'
+        id: LA_kwDOAuWpQc8AAAADA_-pGw
         name: priority:urgent
       - color: cfd3d7
         description: 'Closed: the work was declined'
+        id: LA_kwDOAuWpQc8AAAADA6gOVA
         name: resolution:declined
       - color: cfd3d7
         description: 'Closed: another issue covers it'
+        id: LA_kwDOAuWpQc8AAAADA6gMpQ
         name: resolution:duplicate
       - color: cfd3d7
         description: 'Closed: not a real problem, or filed in the wrong place'
+        id: LA_kwDOAuWpQc8AAAADA6gNow
         name: resolution:invalid
       - color: 8a63d2
         description: 'Collection: describes a scenario, the story its features tell'
+        id: LA_kwDOAuWpQc8AAAADA0NO8w
         name: scenario
       - color: 1d76db
         description: 'Collection: describes a schedule, its deliverable and its exit criteria'
+        id: LA_kwDOAuWpQc8AAAADA0NOqA
         name: schedule
       - color: b60205
         description: 'Severity: data loss, corruption, or a security failure'
+        id: LA_kwDOAuWpQc8AAAADA_-qUg
         name: severity:critical
       - color: d93f0b
         description: 'Severity: a supported path is broken with no workaround'
+        id: LA_kwDOAuWpQc8AAAADA_-qng
         name: severity:high
       - color: 0e8a16
         description: 'Severity: cosmetic, or a defect nobody is hitting'
+        id: LA_kwDOAuWpQc8AAAADA_-rOw
         name: severity:low
       - color: fbca04
         description: 'Severity: broken with a workaround, or a narrow path'
+        id: LA_kwDOAuWpQc8AAAADA_-q9g
         name: severity:medium
       - color: cfd3d7
         description: 'Severity: not applicable, the issue is not a bug'
+        id: LA_kwDOAuWpQc8AAAADBSYSkw
         name: severity:n/a
       - color: 1d76db
         description: 'Level 2: planned work, a step in delivering a feature'
+        id: LA_kwDOAuWpQc8AAAAC4hhYSg
         name: task
   teams: {}
 projects:
@@ -178,11 +234,17 @@ projects:
       - id: PVTSSF_lAHOAC5Zr84Bp9ZZzhoWmqE
         name: Status
         options:
-          - id: ba4e0e54
+          - color: GRAY
+            description: The issue is open
+            id: ba4e0e54
             name: Open
-          - id: fd5cef35
+          - color: YELLOW
+            description: Someone is working on the issue
+            id: fd5cef35
             name: In progress
-          - id: 470096a0
+          - color: PURPLE
+            description: The issue is closed; closed is not done until the record says so
+            id: 470096a0
             name: Closed
         type: single-select
       - id: PVTF_lAHOAC5Zr84Bp9ZZzhoWmtA
@@ -191,18 +253,34 @@ projects:
       - id: PVTF_lAHOAC5Zr84Bp9ZZzhobwMY
         name: Worktree
         type: text
-      - id: PVTIF_lAHOAC5Zr84Bp9ZZzhoeM3w
+      - configuration:
+          duration: 14
+          start_day: 1
+        id: PVTIF_lAHOAC5Zr84Bp9ZZzhoeM3w
         name: Iteration
         type: iteration
       - id: PVTSSF_lAHOAC5Zr84Bp9ZZzhofxUQ
         name: Schedule
         options:
-          - id: 4d409b8f
+          - color: GRAY
+            description: David-Noble-at-work/personal#319
+            id: 4d409b8f
             name: placeholder
         type: single-select
     id: PVT_kwHOAC5Zr84Bp9ZZ
     name: Schedule
     number: 1
+    public: false
+    readme: |-
+      A team's Schedule project holds its committed tasks and bugs.
+
+      - The Schedule field names the schedule each row belongs to: one option per schedule, named for its Schedule issue, which holds the schedule's deliverable and exit criteria.
+      - Step orders the rows within a schedule. A Schedule issue's own row has no step.
+      - Iteration gives each row its sprint.
+      - Status is Open, In progress or Closed. Worktree links a step to the branch its work is on.
+    repositories: []
+    short_description: David-Noble-at-work's copy of NobleFactor's Schedule template. A user account can't have templates, so a Schedule project is copied from this one.
+    teams: []
     template: false
     views:
       - fields:
@@ -239,11 +317,17 @@ projects:
       - id: PVTSSF_lAHOAC5Zr84Bp9ZdzhoWmvM
         name: Status
         options:
-          - id: 8d4a9acd
+          - color: GRAY
+            description: The issue is open
+            id: 8d4a9acd
             name: Open
-          - id: 7c9852e3
+          - color: YELLOW
+            description: Someone is working on the issue
+            id: 7c9852e3
             name: In progress
-          - id: a4f6d48d
+          - color: PURPLE
+            description: The issue is closed; closed is not done until the record says so
+            id: a4f6d48d
             name: Closed
         type: single-select
       - id: PVTF_lAHOAC5Zr84Bp9ZdzhoWmwM
@@ -252,12 +336,24 @@ projects:
       - id: PVTSSF_lAHOAC5Zr84Bp9Zdzhofu44
         name: Scenario
         options:
-          - id: 04f89a4e
+          - color: GRAY
+            description: David-Noble-at-work/personal#316
+            id: 04f89a4e
             name: placeholder
         type: single-select
     id: PVT_kwHOAC5Zr84Bp9Zd
     name: Scenario
     number: 2
+    public: false
+    readme: |-
+      A team's Scenario project holds its features.
+
+      - The Scenario field names the scenario each row belongs to: one option per scenario, named for its Scenario issue, which tells the story.
+      - Beat orders the rows within a scenario.
+      - Status is Open, In progress or Closed.
+    repositories: []
+    short_description: David-Noble-at-work's copy of NobleFactor's Scenario template. A user account can't have templates, so a Scenario project is copied from this one.
+    teams: []
     template: false
     views:
       - fields:
@@ -292,16 +388,33 @@ projects:
       - id: PVTSSF_lAHOAC5Zr84BqCRRzhobInc
         name: Status
         options:
-          - id: dc6fec11
+          - color: GRAY
+            description: The issue is open
+            id: dc6fec11
             name: Open
-          - id: 83cff555
+          - color: YELLOW
+            description: Someone is working on the issue
+            id: 83cff555
             name: In progress
-          - id: c11622a4
+          - color: PURPLE
+            description: The issue is closed. Closed does not always mean done
+            id: c11622a4
             name: Closed
         type: single-select
     id: PVT_kwHOAC5Zr84BqCRR
     name: Triage
     number: 4
+    public: false
+    readme: |-
+      A Triage project is a team's queue of issues waiting to be classified. See the issue data model, section 3: https://github.com/NobleFactor/noblefactor-engprod/blob/develop/docs/architecture/issue-data-model/3-collections.md
+
+      - Each team has one Triage project, copied from this template. A user account has one too.
+      - Any issue can be a row, of any type or none. The rows have no order and no step numbers: this is a queue, worked and emptied.
+      - A row leaves the queue once its issue is fully classified, or closed with a reason.
+      - Status is Open, In progress or Closed.
+    repositories: []
+    short_description: David-Noble-at-work's copy of NobleFactor's Triage template. A user account can't have templates, so a Triage project is copied from this one.
+    teams: []
     template: false
     views:
       - fields:
@@ -336,16 +449,30 @@ projects:
       - id: PVTSSF_lAHOAC5Zr84BqFiWzhoeM6g
         name: Status
         options:
-          - id: fa8b3d98
+          - color: GRAY
+            description: The issue is open
+            id: fa8b3d98
             name: Open
-          - id: 2754212f
+          - color: YELLOW
+            description: Someone is working on the issue
+            id: 2754212f
             name: In progress
-          - id: 63b7fbe5
+          - color: PURPLE
+            description: The issue is closed. Closed does not always mean done
+            id: 63b7fbe5
             name: Closed
         type: single-select
     id: PVT_kwHOAC5Zr84BqFiW
     name: Backlog
     number: 5
+    public: false
+    readme: |-
+      A team's Backlog project holds work that triage accepted and that isn't scheduled yet, ordered by priority.
+
+      - Status is Open, In progress or Closed.
+    repositories: []
+    short_description: David-Noble-at-work's copy of NobleFactor's Backlog template. A user account can't have templates, so a Backlog project is copied from this one.
+    teams: []
     template: false
     views:
       - fields:
@@ -365,18 +492,21 @@ projects:
 types:
   - color: 7057ff
     description: 'Level 0: a body of work with an owner, the root work issues roll up to; decomposes into features'
+    enabled: true
     id: LA_kwDOVhE47c8AAAADA0OT-Q
     label: epic
     level: 0
     name: Epic
   - color: 0e8a16
     description: 'Level 1: a capability for the product or for engineering; decomposes into tasks and bugs'
+    enabled: true
     id: LA_kwDOVhE47c8AAAADA0OU4w
     label: feature
     level: 1
     name: Feature
   - color: d73a4a
     description: 'Level 2: unplanned work, a defect found rather than planned; repairs a feature'
+    enabled: true
     id: LA_kwDOVhE47c8AAAADAz2QRw
     label: bug
     level: 2
@@ -384,17 +514,20 @@ types:
     unplanned: true
   - color: 1d76db
     description: 'Level 2: planned work, a step in delivering a feature'
+    enabled: true
     id: LA_kwDOVhE47c8AAAADA0OVsA
     label: task
     level: 2
     name: Task
   - color: 1d76db
     description: 'Collection: describes a schedule, its deliverable and its exit criteria'
+    enabled: true
     id: LA_kwDOVhE47c8AAAADA0NPOg
     label: schedule
     name: Schedule
   - color: 8a63d2
     description: 'Collection: describes a scenario, the story its features tell'
+    enabled: true
     id: LA_kwDOVhE47c8AAAADA0NPiA
     label: scenario
     name: Scenario
