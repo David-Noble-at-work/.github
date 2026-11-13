@@ -78,7 +78,9 @@ jobs:
           gh issue edit "$NUMBER" --repo "$GITHUB_REPOSITORY" --add-label "area:$(printf '%s' "$area" | tr '[:upper:]' '[:lower:]')"
           echo "Area: $area"
       # Ruled 2026-11-04 (David-Noble-at-work/personal#311): a bug filed from the bug form, which sets the bug label,
-      # starts at severity:medium; any other issue is severity:n/a. An issue that already has a severity keeps it.
+      # starts at severity:medium; an issue with another type label is severity:n/a; and an issue with no type label yet
+      # gets none and waits for triage, which sets it with the type (NobleFactor/noblefactor-engprod#448). An issue that
+      # already has a severity keeps it.
       - name: Set the Severity a new issue starts with
         env:
           GH_TOKEN: ${{ github.token }}
@@ -88,7 +90,8 @@ jobs:
           case ",$LABELS," in
             *,severity:*) echo "The issue has a severity already: $LABELS"; exit 0 ;;
             *,bug,*) severity=medium ;;
-            *) severity=n/a ;;
+            *,task,* | *,epic,* | *,feature,* | *,schedule,* | *,scenario,*) severity=n/a ;;
+            *) echo "No type label yet: the severity waits for triage, which sets it with the type."; exit 0 ;;
           esac
           gh issue edit "$NUMBER" --repo "$GITHUB_REPOSITORY" --add-label "severity:$severity"
           echo "Severity: $severity"
