@@ -88,7 +88,7 @@ labels:
         id: LA_kwDOVhE47c8AAAADAz2Q2A
         name: resolution:invalid
       - color: 8a63d2
-        description: 'Collection: describes a scenario, the story its features tell'
+        description: 'Collection: what someone wants to do, how to walk through it, and the features it uses'
         id: LA_kwDOVhE47c8AAAADA0NPiA
         name: scenario
       - color: 1d76db
@@ -197,7 +197,7 @@ labels:
         id: LA_kwDOAuWpQc8AAAADA6gNow
         name: resolution:invalid
       - color: 8a63d2
-        description: 'Collection: describes a scenario, the story its features tell'
+        description: 'Collection: what someone wants to do, how to walk through it, and the features it uses'
         id: LA_kwDOAuWpQc8AAAADA0NO8w
         name: scenario
       - color: 1d76db
@@ -526,7 +526,7 @@ types:
     label: schedule
     name: Schedule
   - color: 8a63d2
-    description: 'Collection: describes a scenario, the story its features tell'
+    description: 'Collection: what someone wants to do, how to walk through it, and the features it uses'
     enabled: true
     id: LA_kwDOVhE47c8AAAADA0NPiA
     label: scenario
