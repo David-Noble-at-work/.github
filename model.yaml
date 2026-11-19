@@ -83,7 +83,7 @@ labels:
         description: 'Closed: another issue covers it'
         id: LA_kwDOVhE47c8AAAADAz2Qfw
         name: resolution:duplicate
-      - color: e4e669
+      - color: cfd3d7
         description: 'Closed: not a real problem, or filed in the wrong place'
         id: LA_kwDOVhE47c8AAAADAz2Q2A
         name: resolution:invalid
@@ -311,7 +311,9 @@ projects:
         layout: table
         name: By schedule
         number: 2
-        sort_by: []
+        sort_by:
+          - direction: asc
+            field: Step
         vertical_group_by: []
   - copy_short_description: '{owner}''s Scenario project: its Scenario issues and the tasks and bugs found while walking them'
     fields:
@@ -363,11 +365,13 @@ projects:
           - Status
           - Linked pull requests
           - Sub-issues progress
+          - Beat
         filter: ""
-        group_by: []
+        group_by:
+          - Scenario
         layout: table
-        name: View 1
-        number: 1
+        name: By scenario
+        number: 2
         sort_by: []
         vertical_group_by: []
       - fields:
@@ -376,13 +380,11 @@ projects:
           - Status
           - Linked pull requests
           - Sub-issues progress
-          - Beat
         filter: ""
-        group_by:
-          - Scenario
+        group_by: []
         layout: table
-        name: By scenario
-        number: 2
+        name: Default
+        number: 3
         sort_by: []
         vertical_group_by: []
   - copy_short_description: '{owner}''s Triage project: the account''s queue of issues waiting to be classified.'
@@ -426,11 +428,11 @@ projects:
           - Labels
           - Linked pull requests
           - Sub-issues progress
-        filter: ""
+        filter: -label:area:product -label:area:engineering
         group_by: []
         layout: table
-        name: View 1
-        number: 1
+        name: Missing Area
+        number: 2
         sort_by: []
         vertical_group_by: []
       - fields:
@@ -440,11 +442,11 @@ projects:
           - Labels
           - Linked pull requests
           - Sub-issues progress
-        filter: -label:area:product -label:area:engineering
+        filter: ""
         group_by: []
         layout: table
-        name: Missing Area
-        number: 2
+        name: Default
+        number: 3
         sort_by: []
         vertical_group_by: []
   - copy_short_description: '{owner}''s Backlog project: its accepted work not yet scheduled'
@@ -470,7 +472,7 @@ projects:
     number: 5
     public: false
     readme: |-
-      A team's Backlog project holds work that triage accepted and that isn't scheduled yet, ordered by priority.
+      A team's Backlog project holds work that triage accepted and that isn't scheduled yet, ordered by priority, and its epics and features, each until it closes.
 
       - Status is Open, In progress or Closed.
     repositories: []
@@ -488,8 +490,22 @@ projects:
         filter: ""
         group_by: []
         layout: table
-        name: View 1
-        number: 1
+        name: Default
+        number: 2
+        sort_by: []
+        vertical_group_by: []
+      - fields:
+          - Title
+          - Assignees
+          - Status
+          - Labels
+          - Linked pull requests
+          - Sub-issues progress
+        filter: label:epic,feature
+        group_by: []
+        layout: table
+        name: Epics and features
+        number: 3
         sort_by: []
         vertical_group_by: []
 types:
