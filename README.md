@@ -1,8 +1,12 @@
+---
+title: ".github"
+description: "David-Noble-at-work's community health files, issue forms, issue model and workflow templates"
+updated: 2026-11-24
+---
+
 # .github
 
-David-Noble-at-work's own repository. GitHub serves the community health files and issue templates kept here to every
-David-Noble-at-work repository that doesn't have its own. It also holds the account's issue model and its Triage
-workflow template, and runs that workflow on its own issues.
+David-Noble-at-work's own repository. GitHub serves the community health files and issue templates kept here to every David-Noble-at-work repository that doesn't have its own. It also holds the account's issue model and its workflow templates, Triage and the daily credentials check, and runs both on itself.
 
 | File | What it is |
 | --- | --- |
@@ -13,5 +17,6 @@ workflow template, and runs that workflow on its own issues.
 | `.github/ISSUE_TEMPLATE/` | The issue forms, one for each type label |
 | `.github/pull_request_template.md` | The description every pull request starts from |
 | `workflow-templates/triage.yml` | The Triage workflow template: a new issue goes to Triage: David-Noble-at-work, with its Area and Severity labels |
-| `.github/workflows/triage.yml` | This repository's own Triage workflow, a copy of the template |
+| `workflow-templates/credentials-check.yml`, `credentials-check.sh` and `credentials-check.json` | The daily credentials check: its workflow, script and permissions file. The New workflow page doesn't offer it, since the workflow alone can't run: a repository takes all three by hand, the workflow in `.github/workflows/` and the script and permissions file in `.github/credentials-check/`; the secret and variables it reads, and how to run it once to check it, are in [the credentials guide, § 7](https://github.com/NobleFactor/noblefactor-engprod/blob/develop/docs/reference/issue-tracking-credentials.md#checking). Their source is noblefactor-engprod's `workflow-templates/` (NobleFactor/noblefactor-engprod#613) |
+| `.github/workflows/triage.yml`, `credentials-check.yml` and `.github/credentials-check/` | This repository's own Triage and daily credentials check, copies of the templates |
 | `.github/workflows/quality-gate.yml` | This repository's own check: every YAML and JSON file parses |
