@@ -1,8 +1,12 @@
+---
+title: ".github"
+description: "David-Noble-at-work's community health files, issue forms, issue model and workflow templates"
+updated: 2026-11-24
+---
+
 # .github
 
-David-Noble-at-work's own repository. GitHub serves the community health files and issue templates kept here to every
-David-Noble-at-work repository that doesn't have its own. It also holds the account's issue model and its workflow
-templates, Triage and the daily credentials check, and runs both on itself.
+David-Noble-at-work's own repository. GitHub serves the community health files and issue templates kept here to every David-Noble-at-work repository that doesn't have its own. It also holds the account's issue model and its workflow templates, Triage and the daily credentials check, and runs both on itself.
 
 | File | What it is |
 | --- | --- |
